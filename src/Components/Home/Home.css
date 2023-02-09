@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
+.home-section {
+  margin-top: 2rem;
+}
+#home {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.home-content {
+  margin: 0rem 0rem;
+  padding: 0rem 10rem;
+}
+.home-content p {
+  margin-bottom: auto;
+  font-family: "Merriweather", serif;
+  font-size: 1.5rem;
+  color: #538d4e;
+}
+.home-content h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 7rem;
+  margin: 2rem 0rem;
+  letter-spacing: 0.4rem;
+}
+.content-buttons {
+  margin: 2rem 0rem;
+}
+.home-img {
+  margin-left: auto;
+  margin-right: 5rem;
+}
+.home-img img {
+  width: 45rem;
+}
+
+.content-btn1 {
+  width: 13rem;
+  font-size: 1.2rem;
+  letter-spacing: 0.01rem;
+  color: #fff;
+  cursor: pointer;
+  margin: 1em 0;
+  height: 3.5rem;
+  text-align: center;
+  border: none;
+  background-size: 300% 100%;
+  border-radius: 0.8em;
+  transition: all 0.4s ease-in-out;
+  background-image: linear-gradient(
+    to right,
+    #0ba360,
+    #3cba92,
+    #30dd8a,
+    #2bb673
+  );
+  box-shadow: 0 4px 20px 0 rgba(23, 168, 108, 0.75);
+}
+.content-btn1:focus {
+  outline: none;
+}
+.content-btn1:hover {
+  background-position: 100% 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.btn-rule {
+  position: relative;
+  color: white;
+}
+.content-btn2 {
+  background: none;
+  border: none;
+  margin: 0rem 1.4rem;
+  font-size: 1.3rem;
+}
+.btn-rule::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #3cefff;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.btn-rule:hover::before {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}

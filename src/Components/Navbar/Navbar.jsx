@@ -20,12 +20,14 @@ const Navbar = () => {
               </Link>
             </li>
             <li>
-              <Link to="/play">
+              <Link to="/rules">
                 <span>Game</span>
               </Link>
             </li>
             <li>
-              <span>Rules</span>
+              <Link to="/rules">
+                <span>Rules</span>
+              </Link>
             </li>
             <li>
               <span>Help</span>

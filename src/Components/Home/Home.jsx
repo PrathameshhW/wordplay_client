@@ -13,17 +13,17 @@ const Home = () => {
             <h1>Be Patient, Just Like a Puzzle</h1>
             <h2>Get an amazing new play game experience</h2>
             <div className="content-buttons">
-              <Link to="/play">
+              <Link to="/rules">
                 <button className="content-btn1">
-                  <label htmlFor="">Enter game</label>
+                  <label htmlFor="">Lets Play</label>
                 </button>
               </Link>
 
-              <button className="content-btn2">
-                <a href="">
+              <Link to="/rules">
+                <button className="content-btn2">
                   <span className="btn-rule">Read Rules !</span>
-                </a>
-              </button>
+                </button>
+              </Link>
             </div>
           </div>
           <div className="home-img">

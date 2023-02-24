@@ -64,8 +64,11 @@
 .content-btn1:hover {
   background-position: 100% 0;
   transition: all 0.4s ease-in-out;
+  cursor: pointer;
 }
-
+.content-btn1 > label {
+  cursor: pointer;
+}
 .btn-rule {
   position: relative;
   color: white;
@@ -75,6 +78,7 @@
   border: none;
   margin: 0rem 1.4rem;
   font-size: 1.3rem;
+  cursor: pointer;
 }
 .btn-rule::before {
   content: "";

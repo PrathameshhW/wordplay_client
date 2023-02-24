@@ -7,6 +7,7 @@ import Register from "./Components/Register/Register";
 import HomePage from "../src/Pages/HomePage";
 import GamePage from "./Pages/GamePage";
 import Login from "./Components/Login/Login";
+import RulesPage from "./Pages/RulesPage";
 
 // window.addEventListener(
 //   "contextmenu",
@@ -21,6 +22,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/landing" element={<Landing />} />
+        <Route path="/rules" element={<RulesPage />} />
         <Route path="/play" element={<GamePage />} />
         <Route path="/register" element={<Register />} />
         <Route path="/register" element={<Login />} />

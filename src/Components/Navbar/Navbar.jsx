@@ -38,11 +38,11 @@ const Navbar = () => {
           </ul>
         </nav>
         <div className="buttons">
-          <Link to="/register">
+          <Link to="">
             <button className="btn1">Register</button>
           </Link>
 
-          <Link to="/register">
+          <Link to="">
             <button className="btn2">Login</button>
           </Link>
         </div>

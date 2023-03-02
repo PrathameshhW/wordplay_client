@@ -6,7 +6,7 @@ import GamePage from "./Pages/GamePage";
 import RulesPage from "./Pages/RulesPage";
 import { useState } from "react";
 import Login from "./Components/Login/Login";
-import Register from "./Components/Register/register";
+import Register from "./Components/Register/Register";
 import Navbar from "./Components/Navbar/Navbar";
 import HomePage from "./Pages/HomePage";
 import Home from "./Components/Home/Home";
@@ -40,7 +40,6 @@ function App() {
         <Route path="/login" element={<Login setLoginUser={setLoginUser} />} />
         <Route path="/register" element={<Register />} />
         <Route path="/home" element={<HomePage />} />
-
         <Route path="/rules" element={<RulesPage />} />
         <Route path="/play" element={<GamePage />} />
         <Route path="*" element={<Error />} />

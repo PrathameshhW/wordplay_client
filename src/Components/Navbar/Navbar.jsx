@@ -3,7 +3,7 @@ import Home from "../Home/Home";
 import "../Navbar/Navbar.css";
 import { Link } from "react-router-dom";
 
-const Navbar = () => {
+const Navbar = ({ setLoginUser }) => {
   return (
     <>
       <header className="navbar">
@@ -38,13 +38,10 @@ const Navbar = () => {
           </ul>
         </nav>
         <div className="buttons">
-          <Link to="">
-            <button className="btn1">Register</button>
-          </Link>
-
-          <Link to="">
-            <button className="btn2">Login</button>
-          </Link>
+          {console.log(typeof setLoginUser)}
+          <div className="button" onClick={() => setLoginUser({})}>
+            Logout
+          </div>
         </div>
       </header>
     </>

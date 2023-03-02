@@ -38,6 +38,7 @@ function App() {
         />
         <Route path="/login" element={<Login setLoginUser={setLoginUser} />} />
         <Route path="/register" element={<Register />} />
+
         <Route path="/rules" element={<RulesPage />} />
         <Route path="/play" element={<GamePage />} />
         <Route path="*" element={<Error />} />

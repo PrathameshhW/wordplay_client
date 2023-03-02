@@ -1,5 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import "./App.css";
 
 import GamePage from "./Pages/GamePage";
 import RulesPage from "./Pages/RulesPage";
@@ -38,6 +39,7 @@ function App() {
         />
         <Route path="/login" element={<Login setLoginUser={setLoginUser} />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/home" element={<HomePage />} />
 
         <Route path="/rules" element={<RulesPage />} />
         <Route path="/play" element={<GamePage />} />

@@ -1,13 +1,19 @@
 .login {
-  width: 400px;
-  background: #fff;
-  border: 1px solid #dddfe2;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  /* width: 400px; */
+  color: #fff;
   box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
   border-radius: 8px;
   padding: 1rem;
-  align-items: center;
+  /* align-items: center; */
   color: black;
   text-align: center;
+  flex-direction: column;
 }
 
 .login > input {
@@ -17,21 +23,52 @@
   color: #1d2129;
   margin: 0.5rem 0;
   padding: 0.5rem 0.75rem;
-  width: 92%;
+  width: 20vw;
   font-size: 1rem;
 }
 
 .login > .button {
-  background: #1877f2;
-  border: 1px solid #1877f2;
+  background-color: #538d4e;
   color: #fff;
-  font-size: 1.25rem;
-  padding: 0.5rem;
-  margin: 0.5rem 0;
-  border-radius: 8px;
-  outline: none;
+  border: 1px solid #538d4e;
+  box-shadow: 3px 3px 8px #538d4e;
+
+  transition: 0.2s ease-in-out;
+  padding: 9px 30px;
+  border-radius: 7px;
+  cursor: pointer;
+  width: 7vw;
+  margin: 0.7rem 0;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 1vw;
+}
+.login > .btn1 {
+  box-shadow: 3px 3px 8px #538d4e;
+  color: #538d4e;
+  border: 1px solid #538d4e;
+  background-color: #fff;
+  transition: 0.3s ease-in-out;
+  font-size: 1.2rem;
+  padding: 9px 20px;
+  font-weight: 700;
+  border-radius: 7px;
   cursor: pointer;
 }
+.login > .btn1:hover {
+  background-color: #538d4e;
+  color: #fff;
+}
+.login > .btn2:hover {
+  background-color: #3cb331;
+  transition: 0.2s ease-in-out;
+}
 .login > h1 {
-  color: black;
+  color: #fff;
+  font-size: 2vw;
+  margin-bottom: 1rem;
+}
+
+.login .or {
+  color: #fff;
 }

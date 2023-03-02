@@ -28,7 +28,7 @@ const Register = () => {
         navigate("/login");
       });
     } else {
-      alert("invalid input");
+      alert("Invalid input");
     }
   };
 
@@ -63,11 +63,11 @@ const Register = () => {
         placeholder="Re-enter Password"
         onChange={handleChange}
       ></input>
-      <div className="button" onClick={register}>
+      <div className="button btn1" onClick={register}>
         Register
       </div>
-      <div>or</div>
-      <div className="button" onClick={() => navigate("/login")}>
+      <div className="or">or</div>
+      <div className="button btn2" onClick={() => navigate("/login")}>
         Login
       </div>
     </div>

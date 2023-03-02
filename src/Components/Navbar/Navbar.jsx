@@ -9,13 +9,13 @@ const Navbar = ({ setLoginUser }) => {
       <header className="navbar">
         <div className="heading">
           <h2>
-            <Link to="/">Wordplay</Link>
+            <Link to="/home">Wordplay</Link>
           </h2>
         </div>
         <nav>
           <ul className="nav_links">
             <li>
-              <Link to="/">
+              <Link to="/home">
                 <span>Home</span>
               </Link>
             </li>

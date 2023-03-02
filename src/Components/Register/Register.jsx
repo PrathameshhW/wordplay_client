@@ -23,10 +23,12 @@ const Register = () => {
   const register = () => {
     const { name, email, password, reEnterPassword } = user;
     if (name && email && password && password === reEnterPassword) {
-      axios.post("http://localhost:9002/register", user).then((res) => {
-        alert(res.data.message);
-        navigate("/login");
-      });
+      axios
+        .post("https://brave-ox-flannel-shirt.cyclic.app//register", user)
+        .then((res) => {
+          alert(res.data.message);
+          navigate("/login");
+        });
     } else {
       alert("Invalid input");
     }

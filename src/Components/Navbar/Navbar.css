@@ -84,11 +84,17 @@ span:hover::before {
   text-decoration: none !important;
   color: inherit;
 }
-.buttons .btn1 {
+.button > .btn1 {
+  box-shadow: 3px 3px 8px #538d4e;
   color: #538d4e;
   border: 1px solid #538d4e;
-  background-color: white;
+  background-color: #fff;
   transition: 0.3s ease-in-out;
+  font-size: 1vw;
+  padding: 9px 20px;
+  font-weight: 700;
+  border-radius: 7px;
+  cursor: pointer;
 }
 .buttons .btn2 {
   background-color: #538d4e;

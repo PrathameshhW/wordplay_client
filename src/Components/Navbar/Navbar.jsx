@@ -39,7 +39,7 @@ const Navbar = ({ setLoginUser }) => {
         </nav>
         <div className="buttons">
           {console.log(typeof setLoginUser)}
-          <div className="button" onClick={() => setLoginUser({})}>
+          <div className="button .btn1" onClick={() => setLoginUser({})}>
             Logout
           </div>
         </div>

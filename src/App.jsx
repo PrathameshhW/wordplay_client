@@ -42,7 +42,7 @@ function App() {
         <Route path="/home" element={<HomePage />} />
         <Route path="/rules" element={<RulesPage />} />
         <Route path="/play" element={<GamePage />} />
-        <Route path="*" element={<Error />} />
+        {/* <Route path="*" element={<Error />} /> */}
       </Routes>
     </div>
   );

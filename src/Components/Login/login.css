@@ -57,10 +57,12 @@
 .login > .btn1:hover {
   background-color: #538d4e;
   color: #fff;
+  border: 1px solid #538d4e;
 }
 .login > .btn2:hover {
   background-color: #3cb331;
   transition: 0.2s ease-in-out;
+  border: 1px solid #538d4e;
 }
 .login > h1 {
   color: #fff;

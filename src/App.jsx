@@ -6,7 +6,7 @@ import GamePage from "./Pages/GamePage";
 import RulesPage from "./Pages/RulesPage";
 import { useState } from "react";
 import Login from "./Components/Login/Login";
-import Register from "./Components/register/register";
+import Register from "./Components/Register/register";
 import Navbar from "./Components/Navbar/Navbar";
 import HomePage from "./Pages/HomePage";
 import Home from "./Components/Home/Home";

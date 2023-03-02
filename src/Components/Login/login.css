@@ -32,7 +32,6 @@
   color: #fff;
   border: 1px solid #538d4e;
   box-shadow: 3px 3px 8px #538d4e;
-
   transition: 0.2s ease-in-out;
   padding: 9px 30px;
   border-radius: 7px;
@@ -49,7 +48,7 @@
   border: 1px solid #538d4e;
   background-color: #fff;
   transition: 0.3s ease-in-out;
-  font-size: 1.2rem;
+  font-size: 1vw;
   padding: 9px 20px;
   font-weight: 700;
   border-radius: 7px;

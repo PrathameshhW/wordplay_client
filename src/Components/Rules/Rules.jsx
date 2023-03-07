@@ -5,9 +5,6 @@ import "./Rules.scss";
 const Rules = () => {
   return (
     <>
-      <h1 className="rule-heading">
-        Before entering the game Please Read the Rules
-      </h1>
       <div className="rule">
         <div className="rule-container">
           <h1>How To Play</h1>

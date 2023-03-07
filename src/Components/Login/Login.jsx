@@ -6,11 +6,17 @@ import { useNavigate } from "react-router-dom";
 const Login = ({ setLoginUser }) => {
   const navigate = useNavigate();
 
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  const isValidEmail = (email) => {
+    return emailRegex.test(email);
+  };
   const [user, setUser] = useState({
     email: "",
     password: "",
   });
 
+  const [emailError, setEmailError] = useState("");
   const [loading, setLoading] = useState(false);
 
   const handleChange = (e) => {
@@ -19,6 +25,11 @@ const Login = ({ setLoginUser }) => {
       ...user,
       [name]: value,
     });
+    if (name === "email" && value !== "" && !isValidEmail(value)) {
+      setEmailError("Invalid email address");
+    } else {
+      setEmailError("");
+    }
   };
 
   const login = () => {
@@ -49,6 +60,7 @@ const Login = ({ setLoginUser }) => {
             onChange={handleChange}
             placeholder="Enter your Email"
           ></input>
+          {emailError && <div className="error">{emailError}</div>}
           <input
             type="password"
             name="password"

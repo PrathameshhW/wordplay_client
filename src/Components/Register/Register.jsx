@@ -22,9 +22,20 @@ const Register = () => {
     });
   };
 
+  const validateEmail = (email) => {
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+  };
+
   const register = () => {
     const { name, email, password, reEnterPassword } = user;
-    if (name && email && password && password === reEnterPassword) {
+    if (
+      name &&
+      email &&
+      password &&
+      password === reEnterPassword &&
+      validateEmail(email)
+    ) {
       setLoading(true); // set loading to true before sending the request
       axios
         .post("https://brave-ox-flannel-shirt.cyclic.app//register", user)

@@ -11,19 +11,21 @@
 }
 .home-content {
   margin: 0rem 0rem;
-  padding: 0rem 10rem;
+  padding: 0rem 5rem;
 }
 .home-content p {
   margin-bottom: auto;
   font-family: "Merriweather", serif;
-  font-size: 1.5rem;
   color: #538d4e;
 }
 .home-content h1 {
   font-family: "Montserrat", sans-serif;
-  font-size: 7rem;
+  font-size: 6vw;
   margin: 2rem 0rem;
   letter-spacing: 0.4rem;
+}
+.home-content h2 {
+  font-size: 1.5rem;
 }
 .content-buttons {
   margin: 2rem 0rem;
@@ -33,19 +35,18 @@
   margin-right: 5rem;
 }
 .home-img img {
-  width: 45rem;
+  width: 40vw;
 }
 
 .content-btn1 {
-  width: 13rem;
   font-size: 1.2rem;
   letter-spacing: 0.01rem;
   color: #fff;
   cursor: pointer;
   margin: 1em 0;
-  height: 3.5rem;
   text-align: center;
   border: none;
+  padding: 1rem 3.5rem;
   background-size: 300% 100%;
   border-radius: 0.8em;
   transition: all 0.4s ease-in-out;
@@ -96,4 +97,29 @@
 .btn-rule:hover::before {
   transform-origin: bottom left;
   transform: scaleX(1);
+}
+
+/* Media queries */
+
+@media screen and (max-width: 1100px) {
+  #home {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+  .home-img {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .home-img img {
+    width: 50vw;
+  }
+  .home-content h2 {
+    font-size: 1rem;
+  }
+  .content-btn1,
+  .btn-rule {
+    font-size: 0.9rem;
+  }
 }

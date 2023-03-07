@@ -12,6 +12,11 @@ const Navbar = ({ setLoginUser }) => {
             <Link to="/home">Wordplay</Link>
           </h2>
         </div>
+        <label htmlFor="toggle" className="navbar-toggler">
+          <span className="bar"></span>
+          <span className="bar"></span>
+          <span className="bar"></span>
+        </label>
         <nav>
           <ul className="nav_links">
             <li>
@@ -30,18 +35,14 @@ const Navbar = ({ setLoginUser }) => {
               </Link>
             </li>
             <li>
-              <span>Help</span>
-            </li>
-            <li>
               <span>Contact</span>
             </li>
           </ul>
         </nav>
         <div className="buttons">
-          {console.log(typeof setLoginUser)}
-          <div className="button .btn1" onClick={() => setLoginUser({})}>
+          <button className=".btn1" onClick={() => setLoginUser({})}>
             Logout
-          </div>
+          </button>
         </div>
       </header>
     </>

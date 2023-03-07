@@ -12,6 +12,8 @@ const Register = () => {
     reEnterPassword: "",
   });
 
+  const [loading, setLoading] = useState(false);
+
   const handleChange = (e) => {
     const { name, value } = e.target;
     setUser({
@@ -23,6 +25,7 @@ const Register = () => {
   const register = () => {
     const { name, email, password, reEnterPassword } = user;
     if (name && email && password && password === reEnterPassword) {
+      setLoading(true); // set loading to true before sending the request
       axios
         .post("https://brave-ox-flannel-shirt.cyclic.app//register", user)
         .then((res) => {
@@ -30,6 +33,7 @@ const Register = () => {
           navigate("/login");
         });
     } else {
+      setLoading(false); // set loading to false if there was an error
       alert("Invalid input");
     }
   };
@@ -66,7 +70,7 @@ const Register = () => {
         onChange={handleChange}
       ></input>
       <div className="button btn1" onClick={register}>
-        Register
+        {loading ? "Good Job.." : "Register"}{" "}
       </div>
       <div className="or">or</div>
       <div className="button btn2" onClick={() => navigate("/login")}>

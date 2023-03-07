@@ -5,12 +5,11 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  /* width: 400px; */
   color: #fff;
   box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
   border-radius: 8px;
   padding: 1rem;
-  /* align-items: center; */
+  align-items: center;
   color: black;
   text-align: center;
   flex-direction: column;
@@ -23,7 +22,7 @@
   color: #1d2129;
   margin: 0.5rem 0;
   padding: 0.5rem 0.75rem;
-  width: 20vw;
+  min-width: 20%;
   font-size: 1rem;
 }
 
@@ -36,11 +35,10 @@
   padding: 9px 30px;
   border-radius: 7px;
   cursor: pointer;
-  width: 7vw;
   margin: 0.7rem 0;
   font-weight: bold;
   letter-spacing: 1px;
-  font-size: 1vw;
+  font-size: 1rem;
 }
 .login > .btn1 {
   box-shadow: 3px 3px 8px #538d4e;
@@ -48,8 +46,8 @@
   border: 1px solid #538d4e;
   background-color: #fff;
   transition: 0.3s ease-in-out;
-  font-size: 1vw;
-  padding: 9px 20px;
+  font-size: 1em;
+  padding: 0.6rem 2rem;
   font-weight: 700;
   border-radius: 7px;
   cursor: pointer;
@@ -65,8 +63,8 @@
   border: 1px solid #538d4e;
 }
 .login > h1 {
+  font-size: 2rem;
   color: #fff;
-  font-size: 2vw;
   margin-bottom: 1rem;
 }
 

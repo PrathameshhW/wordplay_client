@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 const Login = ({ setLoginUser }) => {
   const navigate = useNavigate();
 
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  const emailRegex = /[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$/;
 
   const isValidEmail = (email) => {
     return emailRegex.test(email);

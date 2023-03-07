@@ -35,7 +35,11 @@ const Navbar = ({ setLoginUser }) => {
               </Link>
             </li>
             <li>
-              <span>Contact</span>
+              <span>
+                <a href="https://github.com/PrathameshhW" target="_blank">
+                  Contact
+                </a>
+              </span>
             </li>
           </ul>
         </nav>

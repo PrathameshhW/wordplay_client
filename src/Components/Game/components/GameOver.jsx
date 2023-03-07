@@ -22,6 +22,16 @@ function GameOver() {
       {gameOver.guessedWord && (
         <h3>You guessed in {currAttempt.attempt} attempts</h3>
       )}
+      <div className="new-game">
+        Want to play the Cooler Version of this game ?{" "}
+        <button className="content-btn2">
+          <span className="btn-rule">
+            <a href="https://cool-wordplay.onrender.com" target="_blank">
+              Click Me!
+            </a>
+          </span>
+        </button>
+      </div>
     </div>
   );
 }

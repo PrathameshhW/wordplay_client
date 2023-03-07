@@ -73,16 +73,7 @@ function App() {
       <nav className="nav">
         <h1>WordPlay</h1>
       </nav>
-      <div className="new-game">
-        Want to play the Cooler Version of this game ?{" "}
-        <button className="content-btn2">
-          <span className="btn-rule">
-            <a href="https://cool-wordplay.onrender.com" target="_blank">
-              Click Me!
-            </a>
-          </span>
-        </button>
-      </div>
+
       <AppContext.Provider
         value={{
           board,

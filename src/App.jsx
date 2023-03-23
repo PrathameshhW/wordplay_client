@@ -11,13 +11,13 @@ import Navbar from "./Components/Navbar/Navbar";
 import HomePage from "./Pages/HomePage";
 import Home from "./Components/Home/Home";
 
-// window.addEventListener(
-//   "contextmenu",
-//   function (e) {
-//     e.preventDefault();
-//   },
-//   false
-// );
+window.addEventListener(
+  "contextmenu",
+  function (e) {
+    e.preventDefault();
+  },
+  false
+);
 function App() {
   const [user, setLoginUser] = useState({});
   return (

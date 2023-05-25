@@ -20,7 +20,6 @@ function Key({ keyVal, bigKey, disabled }) {
       className="key"
       id={bigKey ? "big" : disabled && "disabled"}
       onClick={selectLetter}
-      key={keyVal} // Add key prop with a unique value
     >
       {keyVal}
     </div>

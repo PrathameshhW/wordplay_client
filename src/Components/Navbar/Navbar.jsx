@@ -45,7 +45,7 @@ const Navbar = ({ setLoginUser }) => {
         </nav>
         <div className="buttons">
           <button className=".btn1" onClick={() => setLoginUser({})}>
-            Logout
+            Yahooo
           </button>
         </div>
       </header>

@@ -38,7 +38,8 @@ const Register = () => {
     ) {
       setLoading(true); // set loading to true before sending the request
       axios
-        .post("https://brave-ox-flannel-shirt.cyclic.app//register", user)
+        // .post("https://brave-ox-flannel-shirt.cyclic.app//register", user)
+        .post("https://localhost:9002", user)
         .then((res) => {
           alert(res.data.message);
           navigate("/login");

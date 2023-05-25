@@ -25,7 +25,7 @@ function App() {
       <Routes>
         {/* <Route path="/" element={<HomePage />} /> */}
 
-        <Route
+        {/* <Route
           path="/"
           element={
             user && user._id ? (
@@ -37,9 +37,10 @@ function App() {
               <Login setLoginUser={setLoginUser} />
             )
           }
-        />
+        /> */}
         <Route path="/login" element={<Login setLoginUser={setLoginUser} />} />
         <Route path="/register" element={<Register />} />
+        <Route path="/" element={<HomePage />} />
         <Route path="/home" element={<HomePage />} />
         <Route path="/rules" element={<RulesPage />} />
         <Route path="/play" element={<GamePage />} />

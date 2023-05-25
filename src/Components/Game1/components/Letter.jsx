@@ -18,10 +18,8 @@ function Letter({ letterPos, attemptVal }) {
       setDisabledLetters((prev) => [...prev, letter]);
     }
   }, [currAttempt.attempt]);
-
-  // Conditionally apply the id attribute only when letterState is truthy
   return (
-    <div className="letter" id={letterState || undefined}>
+    <div className="letter" id={letterState}>
       {letter}
     </div>
   );

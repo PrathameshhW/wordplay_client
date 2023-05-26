@@ -9,7 +9,7 @@ const Navbar = ({ setLoginUser }) => {
       <header className="navbar">
         <div className="heading">
           <h2>
-            <Link to="/home">Wordplay</Link>
+            <Link to="/">Wordplay</Link>
           </h2>
         </div>
         <label htmlFor="toggle" className="navbar-toggler">
@@ -20,7 +20,7 @@ const Navbar = ({ setLoginUser }) => {
         <nav>
           <ul className="nav_links">
             <li>
-              <Link to="/home">
+              <Link to="/">
                 <span>Home</span>
               </Link>
             </li>
